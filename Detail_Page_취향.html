@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>식당 상세정보</title>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nlmj3g4m9l"></script>
+        
+        <style>
+            .container1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .img_size {
+                width: 25%;
+                height: 250px;
+            }
+            .container2 {
+                display: flex;
+                flex-direction: row;
+            }
+            .head {
+                width: 70%;
+                height: 400px;
+                margin: 20px;
+                padding: 10px;
+            }
+            .map {
+                width: 30%; 
+            }
+            th {
+                text-align: left;
+            }
+            td {
+                padding-top: 15px;
+                padding-left: 45px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <img class="img_size" src="연래춘_1.jpg">
+            <img class="img_size" src="연래춘_2.jpg">
+            <img class="img_size" src="연래춘_3.jpg">
+            <img class="img_size" src="연래춘_4.jpg">
+        </div>
+        <div class="container2">
+            <div class="head">
+                <h1>연래춘</h1>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>주소</th>
+                            <td>서울 동작구 상도로67길 32</td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>02-816-2007</td>
+                        </tr>
+                        <tr>
+                            <th>가격대</th>
+                            <td>4,000₩ ~ 30,000₩</td>
+                        </tr>
+                        <tr>
+                            <th>영업시간</th>
+                            <td>9:00~21:00</td>
+                        </tr>
+                        <tr>
+                            <th>휴일</th>
+                            <td>없음</td>
+                        </tr>
+                        <tr>
+                            <th>대표메뉴</th>
+                            <td>짜장면, 짬뽕, 탕수육</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map">
+                <div id="map" style="width:100%;height:400px;"></div>
+
+                <script>
+                var mapOptions = {
+                    center: new naver.maps.LatLng(37.495297, 126.955157),
+                    zoom: 20
+                };
+        
+                var map = new naver.maps.Map('map', mapOptions);
+                
+                var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(37.495297, 126.955157),
+                    map: map
+                });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
