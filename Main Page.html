@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>슝메추</title>
+        <style>
+            body {background-color: #C3E6EA}
+            .start_box {
+                width: 600px; height: 900px;
+                background-color: #87D5EB;
+                border: 1px solid gray;
+                box-shadow: 5px 5px 9px black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .start_button {
+                width: 400px;
+                height: 60px;
+                background-color: white;
+                border-width: 2px;
+                border-radius: 20px;
+                box-shadow: 2px 2px 11px rgb(71, 73, 83);
+                position: absolute;
+                top: 750px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            .start_font { 
+                font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 30px 10px 0px 10px;
+                letter-spacing: 20px;
+                padding-inline-start: 20px;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(20, 49, 211);
+            }
+            .title {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                letter-spacing: 50px;
+                position: relative;
+                text-align: center;
+                color: white;
+                font-size: 500%;
+                padding: 20px 10px 0px 10px;
+                margin: 50px 0px 0px 0px;
+                margin-inline-start: 50px;
+                z-index: 30;
+            }
+            .subtitle {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                text-align: center;
+                font-size: 1.7em;
+                margin: 3px 0px 0px 0px;
+                color: #0c4cac;
+            }
+            .soongsil_mark_position {
+                position: absolute;
+                top: -185px;
+                left: 350px;
+                z-index: 20;
+            }
+            .soongsoong_position {
+                position: absolute;
+                top: 350px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            .icon_right {
+                position: absolute;
+                top: 100px;
+                left: 250px;
+            }
+            .icon_left {
+                position: absolute;
+                top: 100px;
+                left: -50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="start_box">
+            <h1 class="title">슝메추</h1>
+            <h3 class="subtitle">오늘 뭐 먹을지 고민될 땐?</h3>
+            <h3 class="subtitle">(숭실대 편)</h3>
+            <div class="start_button start_font" ><a href="LOGIN.html">START</a></div>
+            <img class="soongsil_mark_position" src="soongsil.png" width="300" height="500">
+            <img class="icon_right" src="Icon_1.png">
+            <img class="icon_left" src="Icon_2.png">
+            <img class="soongsoong_position" src="soongsoong.png">
+        </div>
+    </body>
+</html>

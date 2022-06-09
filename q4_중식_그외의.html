@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>슝메추</title>
+    <script>
+        // 랜덤으로 생성할 링크들을 설정 하세요
+        var link=new Array()
+
+        link[0]="q5_중식_그외의_매콤한거.html"
+        link[1]="q5_중식_그외의_오늘따라.html"
+
+        function randomlink(){
+            window.location=link[Math.floor(Math.random()*link.length)]
+        }
+        </script>
+    <style>
+        @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }            
+        
+        ul {
+            /* 네비게이션 박스 */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #C3E6EA;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        li a {
+            /* 내가 추천받은 식당, 내가 방문한 식당 글씨 */
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        li a.active {
+            /* 홈 배경색 */
+            background-color: rgb(139, 192, 239);
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            /* 내가 추천 받은 식당, 내가 방문한 식당 마우스 올렸을 때 */
+            background-color: rgb(197, 224, 247);
+            color: white;
+        }
+
+        .question, .option-btn, .question-progress, .progress-bar {
+            display: block;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .question {
+            margin: 3rem 3rem 2rem;
+            color: #000;
+            font-family: 'GangwonEduPowerExtraBoldA';
+          }
+
+        .option-btn {
+            /* background-color: #ededed; */
+            background-color: rgb(226, 238, 246);
+            /* background-color: #C3E6EA; */
+            font-weight: bolder;
+            font-size: 18px;
+            height: 9em;
+            width: 20rem;
+            margin: .5em;
+            word-break: keep-all;
+            white-space: pre-line;
+            cursor: pointer;
+            width:400px; left:0; right:0; margin-left:auto; margin-right:auto;
+            font-family: 'GangwonEduPowerExtraBoldA';
+
+        }
+
+        .question-progress {
+            margin: 3rem 5rem;
+            position: relative;
+            display: block;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        .progress-bar {
+            margin-bottom: 2rem;
+        }
+
+        .soongsoong_position {
+            cursor: pointer;
+            margin: .5em;
+            width:250px; left:0; right:0; margin-left:auto; margin-right:auto;
+            }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="q1.html">홈</a></li>
+        <li><a href="restPage.html">내가 추천 받은 식당</a></li>
+        <li><a href="visitPage.html">내가 방문한 식당</a></li>
+      </ul>
+      
+      <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div>
+        <div class="question">
+            <h3 class="question-menu1">Q4 - 그 외의 것을 먹고 싶어요!</h5>
+        </div>
+
+        <div class="option-btn-div">
+            <button value="bap" onclick="location.href='q5_중식_그외의_오늘따라.html'" class="option-btn" style="color:black;">오늘따라 얼큰한게 땡기네요</button>
+            <button value="sul" onclick="location.href='q5_중식_그외의_매콤한거.html'" class="option-btn" style="color:black;">매콤한 거 싫어요</button>
+        </div>
+
+        <div class="soongsoong_position" onclick="randomlink()" >
+            <img    src="random_character.png" width="250" height="300" >
+        </div>
+
+        <div class="question-progress">
+            <div class="progress-bar">
+                <div style="display: initial; align-items: initial;">
+                    <div style="height: 10px; background-color: rbg(223, 230, 245); border-radius:50px; width:750px; margin-left:auto; margin-right:auto;">
+                        <div style="height: 10px; width: 600px; background-color: rgb(130, 154, 209); transition: width 0.3s ease-in-out 0s; border-radius: inherit; display: flex; align-items: center; justify-content: flex-end;"><span style="padding: 5px; color: rgb(255, 255, 255); font-weight: bold; font-size: 15px; display: none;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <b><div class="question-count">4 / 5</div></b>
+        </div>
+
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>슝메추</title>
+    <script>
+        // 랜덤으로 생성할 링크들을 설정 하세요
+        var link1=new Array()
+
+        link1[0]="result_중식_그외_얼큰_쫄깃_깐풍기_가야성.html"
+        link1[1]="result_중식_그외_얼큰_쫄깃_깐풍기_취향.html"
+
+        function randomlink1(){
+            window.location=link1[Math.floor(Math.random()*link1.length)]
+        }
+
+        var link2=new Array()
+
+        link2[0]="result_중식_그외_얼큰_바다_깐쇼_가야성.html"
+        link2[1]="result_중식_그외_얼큰_바다_깐쇼_연래춘.html"
+        link2[2]="result_중식_그외_얼큰_바다_깐쇼_취향.html"
+
+        function randomlink2(){
+            window.location=link2[Math.floor(Math.random()*link2.length)]
+        }
+
+        var link3=new Array()
+
+        link3[0]="result_중식_그외_얼큰_쫄깃_깐풍기_가야성.html"
+        link3[1]="result_중식_그외_얼큰_쫄깃_깐풍기_취향.html"
+        link3[2]="result_중식_그외_얼큰_바다_깐쇼_가야성.html"
+        link3[3]="result_중식_그외_얼큰_바다_깐쇼_연래춘.html"
+        link3[4]="result_중식_그외_얼큰_바다_깐쇼_취향.html"
+
+        function randomlink3(){
+            window.location=link3[Math.floor(Math.random()*link3.length)]
+        }
+
+
+    </script>
+    <style>
+                @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }            
+        
+        ul {
+            /* 네비게이션 박스 */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #C3E6EA;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        li a {
+            /* 내가 추천받은 식당, 내가 방문한 식당 글씨 */
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        li a.active {
+            /* 홈 배경색 */
+            background-color: rgb(139, 192, 239);
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            /* 내가 추천 받은 식당, 내가 방문한 식당 마우스 올렸을 때 */
+            background-color: rgb(197, 224, 247);
+            color: white;
+        }
+
+        .question, .option-btn, .question-progress, .progress-bar {
+            display: block;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .question {
+            margin: 3rem 3rem 2rem;
+            color: #000;
+            font-family: 'GangwonEduPowerExtraBoldA';
+          }
+
+        .option-btn {
+            /* background-color: #ededed; */
+            background-color: rgb(226, 238, 246);
+            /* background-color: #C3E6EA; */
+            font-weight: bolder;
+            font-size: 18px;
+            height: 9em;
+            width: 20rem;
+            margin: .5em;
+            word-break: keep-all;
+            white-space: pre-line;
+            cursor: pointer;
+            width:400px; left:0; right:0; margin-left:auto; margin-right:auto;
+            font-family: 'GangwonEduPowerExtraBoldA';
+
+        }
+
+        .question-progress {
+            margin: 3rem 5rem;
+            position: relative;
+            display: block;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+
+        .progress-bar {
+            margin-bottom: 2rem;
+        }
+
+                
+        .soongsoong_position {
+                    cursor: pointer;
+                    margin: .5em;
+                    width:250px; left:0; right:0; margin-left:auto; margin-right:auto;
+                    }
+
+                    
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="q1.html">홈</a></li>
+        <li><a href="restPage.html">내가 추천 받은 식당</a></li>
+        <li><a href="visitPage.html">내가 방문한 식당</a></li>
+      </ul>
+      
+      <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <div>
+        <div class="question">
+            <h3 class="question-menu1">Q5 - 오늘따라 얼큰한게 땡기네요</h5>
+        </div>
+
+        <div class="option-btn-div">
+            <button value="bap" onclick="randomlink1()" class="option-btn" style="color:black;">쫄깃하게 먹고 싶어요</button>
+            <button value="sul"  onclick="randomlink2()" class="option-btn" style="color:black;">바다의 향을 느끼고 싶어요</button>
+        </div>        
+
+        <div class="soongsoong_position" onclick="randomlink3()" >
+            <img    src="random_character.png" width="250" height="300" >
+        </div>
+
+        <div class="question-progress">
+            <div class="progress-bar">
+                <div style="display: initial; align-items: initial;">
+                    <div style="height: 10px; background-color: rbg(223, 230, 245); border-radius:50px; width:750px; margin-left:auto; margin-right:auto;">
+                        <div style="height: 10px; width: 750; background-color: rgb(130, 154, 209); transition: width 0.3s ease-in-out 0s; border-radius: inherit; display: flex; align-items: center; justify-content: flex-end;"><span style="padding: 5px; color: rgb(255, 255, 255); font-weight: bold; font-size: 15px; display: none;"></span></div>
+                    </div>
+                </div>
+            </div>
+            <b><div class="question-count">5 / 5</div></b>
+        </div>
+
+    </div>
+    
+
+    
+</body>
+</html>
