@@ -1,0 +1,2 @@
+background-color: #C3E6EA
+box-color: #87D5EB

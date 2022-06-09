@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: flex;
+            
+        }
+        @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+        .Review-area{
+            position: relative;
+        }
+        .Review-area h1 {
+            position: relative;
+            right: 450px;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+        .text-area textarea{
+            position: relative;
+            width: 480%;
+            height: 480px;
+            right: 450px;
+            font-size: 18px;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+        .SEND button {
+            position: relative;
+            left: 590px;
+            width: 60%; height: 100px;
+            background-color: #444749;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+        .UPLOAD button {
+            position: relative;
+            right: 450px;
+            bottom: 100px;
+            width: 60%; height: 100px;
+            background-color: #444749;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            font-family: 'GangwonEduPowerExtraBoldA';
+        }
+        .SEND button:hover{
+            background-color: rgb(69, 103, 148);
+        }
+        .UPLOAD button:hover{
+            background-color: rgb(69, 103, 148);
+        }
+        
+        #myform{
+            position: relative;
+            right: 463px;
+        }
+        #myform fieldset{
+            display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+            direction: rtl; /* 이모지 순서 반전 */
+            border: 0; /* 필드셋 테두리 제거 */
+        }
+        #myform fieldset legend{
+            text-align: left;
+        }
+        #myform input[type=radio]{
+            display: none; /* 라디오박스 감춤 */
+        }
+        #myform label{
+            font-size: 1em; /* 이모지 크기 */
+            color: transparent; /* 기존 이모지 컬러 제거 */
+            text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+        }
+        #myform label:hover{
+            text-shadow: 0 0 0 #a00; /* 마우스 호버 */
+        }
+        #myform label:hover ~ label{
+            text-shadow: 0 0 0 #a00; /* 마우스 호버 뒤에오는 이모지들 */
+        }
+        #myform input[type=radio]:checked ~ label{
+            text-shadow: 0 0 0 #a00; /* 마우스 클릭 체크 */
+        }
+    </style>
+</head>
+<body>
+    <section class="Review-area">
+        <h1>연래춘 리뷰 작성하기</h1>
+        <form name="myform" id="myform" method="post" action="./save">
+            <fieldset>
+                <input type="radio" name="rating" value="5" id="rate1"><label for="rate1">⭐</label>
+                <input type="radio" name="rating" value="4" id="rate2"><label for="rate2">⭐</label>
+                <input type="radio" name="rating" value="3" id="rate3"><label for="rate3">⭐</label>
+                <input type="radio" name="rating" value="2" id="rate4"><label for="rate4">⭐</label>
+                <input type="radio" name="rating" value="1" id="rate5"><label for="rate5">⭐</label>
+            </fieldset>
+        </form>
+        <form>
+            <div class="text-area">
+                <textarea type="text" name="content" id="content" placeholder="내용을 입력해주세요"></textarea>
+            </div>
+            <div class ="SEND">
+                <button type="submit">리뷰 올리기</button>
+            </div>
+            <div class ="UPLOAD">
+                <button type="submit">+</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

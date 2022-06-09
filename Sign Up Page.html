@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 페이지</title>
+        <style>
+            body {background-color: #C3E6EA;}
+            @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            h1 {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                text-align:center;
+                margin: 50px;
+                font-size: 3em;
+                word-spacing: 15px;
+            }
+            .sign_up_box {
+                width: 600px; height: 1000px;
+                background-color: #C3E6EA;
+                position: absolute;
+                left: 0; right: 0;
+                margin-left:auto; margin-right:auto;
+            }
+            .sign_up_button {
+                width: 600px; height: 50px;
+                background-color: #87D5EB;
+                border-radius: 10px;
+            }
+            .sign_up_font {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                font-size: 1.5em;
+                color: white;
+            }
+            .menu_outline {
+                width: 560px; height: 100px;
+                border: 1px solid gray;
+                padding: 20px 20px;
+                margin: 50px 0px;
+                font-family: 'GangwonEduPowerExtraBoldA';
+                font-size: 1.3em;
+            }
+            .menu_img_position {
+                position: absolute;
+                left: 20px;
+            }
+            #img1 {
+                position: absolute;
+                top: 108.5px;
+            }
+            #img2 {
+                position: absolute;
+                top: 298.5px;
+            }
+            #img3 {
+                position: absolute;
+                top: 488.5px;
+            }
+            #img4 {
+                position: absolute;
+                top: 678.5px;
+            }
+            input {
+                position: absolute;
+                left: 90px;
+                height: 50px;
+                width: 450px;
+            }
+            #num1 {
+                position: absolute;
+                top: 105px;
+            }
+            #num2 {
+                position: absolute;
+                top: 295px;
+            }
+            #num3 {
+                position: absolute;
+                top: 485px;
+            }
+            #num4 {
+                position: absolute;
+                top: 675px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>슝메추 회원가입</h1>
+        <div class="sign_up_box">
+            <form method="get">
+                <div class="menu_outline">
+                    사용자 이름
+                    <img id="img1" class="menu_img_position" src="security-pass-48.png">
+                    <input id="num1" type="text" name="text" placeholder="ID를 입력해주세요">
+                </div>
+                <div class="menu_outline">
+                    비밀번호
+                    <img id="img2" class="menu_img_position" src="password-48.png">
+                    <input id="num2" type="password" name="password" placeholder="비밀번호를 입력해주세요">
+                </div>
+                <div class="menu_outline">
+                    비밀번호 확인
+                    <img id="img3" class="menu_img_position" src="check-circle-48.png">
+                    <input id="num3" type="password" name="password" placeholder="다시 한번 비밀번호를 입력해주세요">
+                </div>
+                <div class="menu_outline">
+                    이메일
+                    <img id="img4" class="menu_img_position" src="email-48.png">
+                    <input id="num4" type="text" name="text" placeholder="E-mail을 입력해주세요">
+                </div>
+                <div class="sign_up_button">
+                    <div class="sign_up_font">
+                        <a href="LOGIN.html">숭실 맛집 찾으러 가기</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

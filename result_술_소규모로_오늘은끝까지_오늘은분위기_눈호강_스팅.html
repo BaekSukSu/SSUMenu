@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슝메추</title>
+    <style>
+        body{background-color: #C3E6EA }
+        .back_box{
+            width: 1400px; height: 800px;
+                background-color:#C3E6EA;              
+                position: relative;          
+                text-align: center;
+                
+                margin-left:auto; margin-right:auto; margin-top: auto; margin-bottom: auto;
+        }
+
+        .food_box{
+            width: 400px; height: 480px;
+                background-color:#87D5EB;
+                border: 1px solid #87D5EB;
+                box-shadow: 5px 5px 9px black;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+                border-radius: 30px;
+                text-align: center;
+                
+            
+        }
+        .restaurent_box{
+            width: 400px; height: 480px;
+                background-color:#87D5EB;
+                border: 1px solid #87D5EB;
+                box-shadow: 5px 5px 9px black;
+                position: absolute;
+                top: 35%;
+                left: 80%;
+                transform: translate(-50%, -50%);
+                border-radius: 30px;
+                text-align: center;
+        }
+
+
+        .again_btn{
+            width:300px;
+            height:55px;
+            background-color:#87D5EB;
+            border-width:2px;
+            border-radius:20px;
+            box-shadow: 2px 2px 11px rgb(71, 73, 83);
+            position:absolute;
+            top:580px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+
+        .viewmore_btn{
+
+            width:70px;
+            height:34px;
+            background-color:#C3E6EA;
+            border-width:2px;
+            border-radius:15px;    
+            position:absolute;
+            top:395px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+
+        .again_font{
+
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 10px 0px 10px;
+                letter-spacing: 20px;
+                padding-inline-start: 20px;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+        }
+        .viewmore_font{
+
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 10px 0px 10px;
+                letter-spacing: 7px;
+                padding-inline-start: 20px;
+                font-size: 1.1em;
+                font-weight: bold;
+                text-align: center;
+                color: black;
+        }
+        .foodreccommend_font{
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 20px 0px 10px;
+                letter-spacing: 5px;
+                padding-inline-start: 20px;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+
+
+        }
+     
+
+        .viewplus_font{
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 20px 0px 10px;
+                letter-spacing: 2px;
+                padding-inline-start: 20px;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(255, 255, 255);
+        }
+        .againplus_font{
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 20px 0px 10px;
+                letter-spacing: 4px;
+                padding-inline-start: 20px;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+        }
+
+        .myrestaurent_font{
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 20px 0px 10px;
+                letter-spacing: 5px;
+                padding-inline-start: 20px;
+                font-size: 1.3em;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(75, 109, 221);
+
+
+        }
+        .soongsmall_font{
+            font-family: 'GangwonEduPowerExtraBoldA';
+                padding: 10px 20px 0px 10px;
+                letter-spacing: 1.5px;
+                padding-inline-start: 20px;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                
+        }
+
+        body>div{
+
+            position:relative;
+            
+        }
+        .soongsoong_position {
+            width: 400px; height: 480px;
+                          
+                position: absolute;
+                top: 45%;
+                left: 39%;
+                             
+        }
+        .soongsoong_position2 {
+            width: 400px; height: 600px;
+                            
+                position: absolute;
+                top: -15%;
+                left: 37%;
+                
+        }
+        .soongsmall_position{
+
+            width: 400px;
+               
+               
+                position: absolute;
+                top: 78%;
+                left: 81%;
+
+        }
+        .soongsmall_font_position{
+            position: absolute;
+            top:83%;
+            left:76%;
+
+        }
+
+        @font-face {
+                font-family: 'GangwonEduPowerExtraBoldA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="back_box">
+    
+    
+    
+    
+
+        <div class="food_box  ">
+
+            <br>
+            <br>
+            <div class="foodreccommend_font">오늘은 "칵테일"이다!!</div>
+            <br>
+            <br>                       
+            <img style="border-radius: 40px;" src="칵테일2.jpeg" width="300" height="250">
+                     
+        </div>
+        
+
+        <div class="restaurent_box ">
+
+            <br>
+            <div class="myrestaurent_font">내가 갈 식당은?</div>          
+            <div class=" foodreccommend_font">스팅</div>
+            <br> 
+            <img style="border-radius: 40px;"src="스팅.jpeg" width="300" height="250" >      
+            <br>
+            <div class="viewplus_font">식당에 대해 더 자세히 알고 싶다면?</div>
+            <a href="detail_술_스팅.html">
+            <div class="viewmore_btn viewmore_font">더보기</div>
+             </a>
+
+        </div>
+
+        
+        <div class="soongsoong_position2" >
+
+            <img    src="return_message.png" width="400" height="800" >
+        
+        </div>
+
+
+        <a href="q1.html">
+        <div class="soongsoong_position" >
+              
+            <img     src="soongsoong2.png" width="300" height="450" >
+
+        </div>
+        </a>
+
+        <a href=".html">
+
+        <div class="soongsmall_font soongsmall_font_position">이 식당 더이상 안 나오기</div>
+
+        <div class="soongsmall_position "> 
+
+            <img  src="soongsmall.png" width="70" height="100">
+
+        </div>
+
+        </a>
+
+    </div>
+
+</body>
+</html>
